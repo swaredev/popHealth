@@ -14,9 +14,8 @@ GIT
       moped (~> 2.0.0.beta6)
       rubyzip (~> 0.9.9)
 
-GIT
-  remote: https://github.com/projectcypress/health-data-standards.git
-  revision: c0bf708569ce3de847e47250792db935c1cb4e98
+PATH
+  remote: ../health-data-standards
   specs:
     health-data-standards (3.4.6)
       activesupport (~> 4.1.1)
@@ -44,6 +43,8 @@ GEM
       activesupport (= 4.1.4)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    actionpack-xml_parser (1.0.1)
+      actionpack (>= 4.0.0.rc1)
     actionview (4.1.4)
       activesupport (= 4.1.4)
       builder (~> 3.1)
@@ -270,6 +271,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack-xml_parser
   active_model_serializers
   apipie-rails
   bootstrap-sass (~> 3.0.3)
