@@ -54,7 +54,7 @@ module PopHealth
     # add devise views
 #    config.paths["app/views/devise"]
     config.paths["app/views"] << "app/views/devise"
-
+    config.middleware.insert_after ActionDispatch::ParamsParser, ActionDispatch::XmlParamsParser
     require 'will_paginate/array'
   end
 end
