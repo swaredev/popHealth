@@ -69,6 +69,7 @@ module Api
     def destroy
       qr = QME::QualityReport.find(params[:id])
       authorize! :delete, qr
+      qr.patient_results.destroy_all()
       qr.destroy
       render :status=> 204, :text=>""
     end
